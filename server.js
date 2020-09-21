@@ -6,7 +6,7 @@ const app = express()
 app.use(express.static("./dist/javascript-group-d-frontend"));
 
 app.get("/*", function (req, res) {
-  res.sendFile("src/index.html", {
+  res.sendFile("index.html", {
     root: "dist/javascript-group-d-frontend/",
   });
 });

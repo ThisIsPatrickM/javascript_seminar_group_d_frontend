@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "javascript-seminar-group-d-frontend": {
+    "javascript-group-d-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/javascript-seminar-group-d-frontend",
+            "outputPath": "dist/javascript-group-d-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "javascript-seminar-group-d-frontend:build"
+            "browserTarget": "javascript-group-d-frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "javascript-seminar-group-d-frontend:build:production"
+              "browserTarget": "javascript-group-d-frontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "javascript-seminar-group-d-frontend:build"
+            "browserTarget": "javascript-group-d-frontend:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "javascript-seminar-group-d-frontend:serve"
+            "devServerTarget": "javascript-group-d-frontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "javascript-seminar-group-d-frontend:serve:production"
+              "devServerTarget": "javascript-group-d-frontend:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "javascript-seminar-group-d-frontend"
+  "defaultProject": "javascript-group-d-frontend"
 }
