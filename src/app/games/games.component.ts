@@ -9,7 +9,10 @@ import { GamesService } from './services/games.service';
 })
 export class GamesComponent implements OnInit {
 
-  constructor(private gamesService : GamesService) { }
+  constructor(private gamesService : GamesService) { 
+    
+    this.gamesService.sendData("ASD");
+  }
 
   debugMessage: String = "";
   devMode = isDevMode();
