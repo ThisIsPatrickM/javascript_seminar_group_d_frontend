@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { isDevMode } from '@angular/core';
-// import { setTimeout } from 'timers';
+import { GamesService } from './services/games.service';
 
 @Component({
   selector: 'app-games',
@@ -9,7 +9,7 @@ import { isDevMode } from '@angular/core';
 })
 export class GamesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gamesService : GamesService) { }
 
   debugMessage: String = "";
   devMode = isDevMode();
@@ -21,7 +21,6 @@ export class GamesComponent implements OnInit {
   ngOnInit(): void {
   }
   
-
   public onJoinGameButton() {
     this.debugMessage = "Joining Game as " + this.username + " in Session " + this.sessionId + this.selectedGame;
     this.gameJoined = true;
