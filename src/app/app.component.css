@@ -1,4 +1,11 @@
 
+.teacher-settings {
+    border: 1px solid;
+    width: 800px;
+    height: 60px;  
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
 
 .mock-video {
     border: 1px solid;
