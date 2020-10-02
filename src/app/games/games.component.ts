@@ -28,10 +28,10 @@ export class GamesComponent implements OnInit {
     this.debugMessage = "Joining Game as " + this.username + " in Session " + this.sessionId + this.selectedGame;
     this.gameJoined = true;
     // Disconnect after 2 seconds
-    setTimeout( () => {
-      this.onDisconnect();
-      this.debugMessage = "Disconnected after Timeout"
-    }, 2000);
+    // setTimeout( () => {
+    //   this.onDisconnect();
+    //   this.debugMessage = "Disconnected after Timeout"
+    // }, 2000);
 
   }
 
@@ -44,5 +44,8 @@ export class GamesComponent implements OnInit {
     this.debugMessage = "Disconnected";
   }
 
+  onFinished() {
+    console.log("Game Finished");
+  }
 
 }
