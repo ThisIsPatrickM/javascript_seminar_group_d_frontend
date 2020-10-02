@@ -10,7 +10,7 @@
 
 <div *ngIf="gameJoined && isSelected('quiz')" class="gameScreen">
   Playing Quiz!<br>
-  <app-quiz></app-quiz>
+  <app-quiz (finished)="onFinished()"></app-quiz>
   <button (click)="onDisconnect()">Disconnect</button>
 </div>
 
@@ -26,3 +26,4 @@
 </div>
 
 </div>
+
