@@ -1,14 +1,16 @@
 <div class="sidenav">
-  Placeholder
+  <button class="nav-item" mat-fab color="primary" (click)="toggleMockVideo()">Video</button>
+  <button class="nav-item" mat-fab color="primary" (click)="toggleGames()">Games</button>
+  <button class="nav-item" mat-fab color="primary" (click)="toggleSettings()">Settings</button>
 </div>
-<div class="teacher-settings">
-  <teacher-settings></teacher-settings>
+<div class="content">
+  <div>
+    <teacher-settings *ngIf="showSettings"></teacher-settings>
+    <div *ngIf="showMockVideo" class="mock-video">
+      <app-mock-video></app-mock-video>
+    </div>
+    <div *ngIf="showGames" class="games">
+      <app-games username="Peter" sessionId="1234"></app-games>
+    </div>
+  </div>
 </div>
-
-<div class="mock-video">
-  <app-mock-video></app-mock-video>
-</div>
-<div class="games">
-  <app-games username="Peter" sessionId="1234" ></app-games>
-</div>
-

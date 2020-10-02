@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'javascript-seminar-group-d-frontend';
+  showMockVideo = false;
+  showGames = false;
+  showSettings = true;
+
+  toggleMockVideo(){
+    this.showMockVideo = !this.showMockVideo;
+  };
+
+  toggleGames(){
+    this.showGames = !this.showGames;
+  };
+
+  toggleSettings(){
+    this.showSettings = !this.showSettings;
+  };
 }
